@@ -35,5 +35,9 @@ The satellite uses data from the Gyroscope, Accelerometer and Magnetometer in or
 The raw values read form the registers of the IMU then are filtered using an implementation of the madgwick filter.
 The control system of the satellite is a PID controller using the filtered IMU data. It provides methods for moving with a set angular velocity or turn for a certain angle around its vertical axis by controlling the motor speed of the PWM motor. Turning is achieved by creating momentum using a flywheel attached to the motor. If the satellite is idling, it tries to hold its current position.
 
-### Telecommands
+### Telecommands/Telemetry
 
+/Code/wifi/*
+
+The communication is using WiFi and UART. The data transfer is using the publisher/subscriber method. The topics used are declared in /Code/wifi/toppics.h and used to send/receive data by the recievingTelecommands.cpp and sendingTelemetry.cpp.
+WiFi and communication settings can be set using the wifi_interface/wf121.cpp file.
