@@ -1,6 +1,8 @@
 # SpaceMaster-FloatSat-2017
 Code repository for the FloatSat project during the first semester of the SpaceMaster program (winter 2016/2017) in Würzburg.
 
+![Floatsat](https://github.com/Oleffa/SpaceMaster-FloatSat-2017/blob/master/Pictures/P1030937.JPG)
+
 ## Description
 The task was to design, build and program a so called FloatSat from scratch. A FloatSat is based on a hemispherical air suspension that simulates an environment similar to space, without friction that influences the spacecraft. The mission of the satellite is to deploy by spinning the satellite and finding the sun using a light sensor, then using a heatblade and cutting nylon wires in order to open the spring powered solar panel mechanism and charge the batteries. Furthermore the satellite is able to connect to a groundstation using WiFi and sending/receiving telemetry/telecomands using UART or SPI. In order to observe the satellite it also sends a videostream to the ground station using WiFi. Aditionally to these basic tasks the satellites mission was to perform a docking maneuver with satellites developped by other groups. For this we had to collaborate and agree on a common docking interface and telemetry/telecommand format to achieve compatibility between the different satellites.
 
